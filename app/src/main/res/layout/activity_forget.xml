@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".Login.ForgetActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/for_email_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/for_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="email"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="寄送"
+            />
+        <Button
+            android:text="返回"
+            android:id="@+id/for_cancle"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

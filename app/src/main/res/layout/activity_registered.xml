@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/reg_email_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="email"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/reg_password_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="15dp"
+
+        app:passwordToggleEnabled="true"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/reg_password"
+
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="password"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/reg_name_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="name"
+            android:maxLines="1"
+            android:inputType="text"
+            android:singleLine="true"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/reg_phone_la"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/reg_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="phone"
+            android:maxLines="1"
+            android:inputType="text"
+            android:singleLine="true"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <RadioGroup
+
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/reg_gender"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="男"
+            android:id="@+id/boy"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/com_facebook_blue"
+            />
+        <RadioButton
+            android:id="@+id/girl"
+            android:text="女"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/com_facebook_blue"
+            />
+    </RadioGroup>
+
+   <android.support.design.widget.TextInputLayout
+       android:layout_width="match_parent"
+       android:paddingLeft="15dp"
+       android:paddingRight="15dp"
+       android:layout_marginTop="10dp"
+       android:id="@+id/reg_birthday_la"
+       android:layout_height="wrap_content">
+       <android.support.design.widget.TextInputEditText
+
+           android:padding="10dp"
+            android:drawableRight="@drawable/ic_border"
+           android:id="@+id/reg_birthday"
+           android:hint="1957/05/23"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+   </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:id="@+id/reg_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="送出"
+
+            />
+        <Button
+            android:id="@+id/reg_cancel"
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

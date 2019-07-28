@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    android:gravity="center"
+    tools:context="com.example.tryapplication.Login.LoginActivity">
+    <LinearLayout
+        android:id="@+id/it_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="email"
+
+                android:inputType="text"
+                android:singleLine="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/log_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/it_1"
+        android:orientation="vertical"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/login_input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+
+            app:passwordToggleEnabled="true"
+
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_input_password"
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="password"
+
+                android:inputType="textPassword"
+                android:singleLine="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:id="@+id/Log_checkbar"
+        android:layout_below="@id/log_bar"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="記住帳密"
+            android:id="@+id/log_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/yew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Log_checkbar"
+        android:orientation="horizontal"
+        android:gravity="right"
+        >
+
+        <TextView
+
+            android:id="@+id/log_password_fg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘記密碼"
+            android:textColor="@color/com_facebook_blue"
+            android:textStyle="italic"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/log_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="註冊帳號"
+            android:textColor="@color/com_facebook_blue"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yew"
+        >
+
+        <Button
+
+
+            android:id="@+id/log_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_3"
+            android:layout_alignTop="@+id/tv_3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="登入"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="清除"
+            android:id="@+id/log_del"
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+
+        android:layout_below="@id/tv_3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速登入"
+            android:id="@+id/log_fastlogin"
+
+            android:layout_gravity="center_horizontal">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

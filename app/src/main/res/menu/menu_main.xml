@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/action_search"
+    android:icon="@drawable/ic_search"
+    android:title="搜尋"
+    app:actionViewClass="android.support.v7.widget.SearchView"
+    app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="設定"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_primary"
+        android:title="初級單字"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/action_intermediate"
+        android:title="中級單字"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/action_mycollection"
+        android:title="私藏單字"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_my_primary_sing"
+        android:title="英文聽力"
+        app:showAsAction="never"/>
+
+</menu>

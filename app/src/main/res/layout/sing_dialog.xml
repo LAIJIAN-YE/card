@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+    <ImageView
+        android:id="@+id/main_close"
+        android:background="@mipmap/img_home_ad_close"
+        android:layout_gravity="right"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+     <LinearLayout
+         android:padding="20dp"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+
+         android:background="@drawable/dialog_"
+         >
+         <TextView
+
+             android:layout_marginTop="15dp"
+             android:padding="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="text"
+             android:hint="E-mail"
+             android:id="@+id/main_email"
+             android:drawableLeft="@drawable/ic_email"
+             android:drawablePadding="10dp"
+             android:background="@drawable/edtext"
+             android:maxLines="1"
+             />
+
+
+         <android.support.design.widget.TextInputLayout
+             android:id="@+id/main_name_la"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingLeft="15dp"
+             android:paddingRight="15dp"
+             android:layout_marginTop="10dp"
+             >
+
+             <android.support.design.widget.TextInputEditText
+                 android:id="@+id/main_name"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:hint="name"
+                 android:maxLines="1"
+                 android:inputType="text"
+                 android:singleLine="true"
+                 />
+         </android.support.design.widget.TextInputLayout>
+
+
+         <android.support.design.widget.TextInputLayout
+             android:id="@+id/main_phone_la"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingLeft="15dp"
+             android:paddingRight="15dp"
+             android:layout_marginTop="10dp"
+             app:counterEnabled="true"
+             app:counterMaxLength="10"
+             >
+
+             <android.support.design.widget.TextInputEditText
+                 android:id="@+id/main_phone"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:hint="phone"
+                 android:maxLines="1"
+                 android:inputType="text"
+                 android:singleLine="true"
+                 />
+         </android.support.design.widget.TextInputLayout>
+         <RadioGroup
+
+             android:paddingLeft="15dp"
+             android:layout_marginTop="15dp"
+             android:id="@+id/main_gender"
+             android:layout_width="wrap_content"
+             android:orientation="horizontal"
+             android:layout_height="wrap_content">
+             <RadioButton
+                 android:text="男"
+                 android:id="@+id/main_boy"
+                 android:checked="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/com_facebook_blue"
+                 />
+             <RadioButton
+                 android:id="@+id/main_girl"
+                 android:text="女"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/com_facebook_blue"
+                 />
+         </RadioGroup>
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:paddingLeft="15dp"
+             android:paddingRight="15dp"
+             android:layout_marginTop="10dp"
+             android:id="@+id/main_birthday_la"
+             android:layout_height="wrap_content">
+             <android.support.design.widget.TextInputEditText
+
+                 android:padding="10dp"
+                 android:drawableRight="@drawable/ic_border"
+                 android:id="@+id/main_birthday"
+                 android:hint="1957/05/23"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+         </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="22dp"
+                android:text="答對總數:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="0"
+                android:textSize="22dp"
+                android:id="@+id/main_difficult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+         <LinearLayout
+             android:paddingRight="15dp"
+             android:paddingLeft="15dp"
+             android:layout_marginTop="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:textSize="22dp"
+                 android:text="答題總數:"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:textSize="22dp"
+                 android:text="0"
+                 android:id="@+id/main_quantity"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginTop="15dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             >
+
+
+             <Button
+                 android:id="@+id/main_post"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="25dp"
+                 android:text="送出"
+
+                 />
+             <Button
+                 android:id="@+id/main_clear"
+                 android:text="清除"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+
+                 />
+
+         </LinearLayout>
+     </LinearLayout>
+
+
+
+</LinearLayout>
