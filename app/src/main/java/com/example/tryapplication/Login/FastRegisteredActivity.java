@@ -169,12 +169,12 @@ public class FastRegisteredActivity extends SuperActivity implements View.OnClic
 
         }
     }
-
+    //上傳失敗 取得錯誤資訊
     @Override
     public void ErrorMsg_Patch(String msg) {
         Toast.makeText(FastRegisteredActivity.this,msg+"",Toast.LENGTH_SHORT).show();
     }
-
+    //上傳成功 彈出dialog
     @Override
     public void loadComlete_Patch(JSONObject msg) {
         alertDialog.show();

@@ -56,7 +56,6 @@ public class Dialog_Image extends DialogFragment {
          close=view.findViewById(R.id.dialog_close);
         viewPager.setAdapter(new Viewpager(getChildFragmentManager(),fragments()));
 
-
         setView();
 
         return view;

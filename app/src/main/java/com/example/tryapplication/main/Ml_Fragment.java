@@ -14,15 +14,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-
-
 import com.example.tryapplication.Adapter.LinearAdapter;
 import com.example.tryapplication.R;
 import com.example.tryapplication.data.FormatEnglish;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -38,7 +34,6 @@ public class Ml_Fragment extends Fragment {
     private HashMap<Integer,Boolean> Check;
     private ArrayList<FormatEnglish> Pr_list,In_list;
     private mAsyncTask UpadateUI;
-    private mAsyncTask next;
     public static Ml_Fragment newInstance() {
         Ml_Fragment fragment = new Ml_Fragment();
         return fragment;
