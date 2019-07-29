@@ -160,9 +160,7 @@ public class PhraseActivity extends SuperActivity {
         log_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 finish();
-
             }
 
         });

@@ -35,7 +35,7 @@ import org.json.JSONObject;
 public class RegisteredActivity extends SuperActivity implements View.OnClickListener , SuperActivity.ApiCallbacj_Patch {
     private Button post,cancle;
     private TextInputEditText name,email,password,phone;
-   private  TextInputEditText birthday;
+    private  TextInputEditText birthday;
     private RadioGroup group;
     private  RadioButton radioButton;
     private TextInputLayout name_la,password_la,phone_la,birthday_la,email_la;

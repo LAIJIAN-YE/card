@@ -73,7 +73,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * 主頁面 包含3個 fragment
+ * 1.主頁面 包含3個 fragment
+ * 2.左拉 視窗
+ * 3.搜尋
+ *
  */
 public class MainActivity extends SuperActivity implements NavigationView.OnNavigationItemSelectedListener, SuperActivity.ApiCallback_Get , SuperActivity.ApiCallbacj_Patch {
     private PageViewModel pageViewModel;
@@ -106,6 +109,7 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
     private boolean bg_check=false;
     private String[] Callbackmsg;
     private  TextView email;
+    private  Boolean volley_check=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -437,6 +441,7 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
         if(!sharedPreferences.getString("image","").equals("")){
             getBitmapFromSharedPreferences(HE_Picture);
         }
+        //答題數 跟答對數
         if(Callbackmsg!=null){
             Callbackmsg[5]=sharedPreferences.getString("call5","0");
             Callbackmsg[6]=sharedPreferences.getString("call6","0");
@@ -515,6 +520,7 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
                 /**
                  * 設置 會員資料  並且可以修改部分內容
                  */
+
                 new TDialog.Builder(getSupportFragmentManager())
                         .setLayoutRes(R.layout.sing_dialog)
                         .setDimAmount(0.8f)
@@ -550,8 +556,10 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
                                 if(Callbackmsg[3]!=null){
                                     if(Callbackmsg[3].equals("男")){
                                         boy.setChecked(true);
+                                        radiogender="男";
                                     }else{
                                         gril.setChecked(true);
+                                        radiogender="女";
                                     }
                                 }
                                 if(Callbackmsg[4]!=null){
@@ -618,6 +626,10 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
                                 if(Phone_Watcher!=null){
                                     phone.removeTextChangedListener(Phone_Watcher);
                                 }
+                                if(auth!=null&&volley_check==true){
+                                    Volley_Get(auth.getUid());
+                                    volley_check=false;
+                                }
                             }
                         })
                         .setCancelableOutside(false)
@@ -646,9 +658,11 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
                                         Volley_Patch(MainActivity.this,auth.getUid(),email.getText().toString()
                                                 ,name.getText().toString(),phone.getText().toString()
                                                 ,radiogender,birthday.getText().toString());
+                                        volley_check=true;
                                        }else {
                                            Toast.makeText(MainActivity.this,"請檢查格式",Toast.LENGTH_SHORT).show();
                                        }
+
                                         break;
 
                                 }
@@ -915,6 +929,7 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
             Callbackmsg[2]=msg.getString("phone");
             Callbackmsg[3]=msg.getString("gender");
             Callbackmsg[4]=msg.getString("birthday");
+            Log.d(TAG, "loadComplete_Get: "+Callbackmsg[2]);
         } catch (JSONException e) {
             e.printStackTrace();
         }
