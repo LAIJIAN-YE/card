@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.tryapplication">
+    package="com.example.Wo_Ca_Lo">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -18,7 +18,7 @@
         <provider
             android:grantUriPermissions="true"
             android:exported="false"
-            android:authorities="com.example.tryapplication.fileprovider"
+            android:authorities="com.example.Wo_Ca_Lo.fileprovider"
             android:name="android.support.v4.content.FileProvider"
             >
             <meta-data
@@ -27,19 +27,19 @@
                 >
             </meta-data>
         </provider>
-        <activity android:name=".main.MainActivity"
+        <activity android:name="com.example.Wo_Ca_Lo.main.MainActivity"
             android:label=""
             >
 
         </activity>
-        <activity android:name=".PhraseActivity" />
-        <activity android:name=".Login.FastRegisteredActivity" >
+        <activity android:name="com.example.Wo_Ca_Lo.PhraseActivity" />
+        <activity android:name="com.example.Wo_Ca_Lo.Login.FastRegisteredActivity" >
 
         </activity>
-        <activity android:name=".Login.ForgetActivity" />
-        <activity android:name=".Login.RegisteredActivity" />
-        <activity android:name=".SuperActivity" />
-        <activity android:name=".Login.LoginActivity" >
+        <activity android:name="com.example.Wo_Ca_Lo.Login.ForgetActivity" />
+        <activity android:name="com.example.Wo_Ca_Lo.Login.RegisteredActivity" />
+        <activity android:name="com.example.Wo_Ca_Lo.SuperActivity" />
+        <activity android:name="com.example.Wo_Ca_Lo.Login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

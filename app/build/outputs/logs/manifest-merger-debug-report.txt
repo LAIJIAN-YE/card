@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:1-51:12
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:2:1-109:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\682008fb67ea75ba023bc136a3767ab8\AndroidManifest.xml:17:1-24:12
-MERGED from [:tdialog] C:\Users\line\AndroidStudioProjects\TryApplication\tdialog\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:tdialog] C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\tdialog\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] C:\Users\line\.gradle\caches\transforms-2\files-2.1\28834ff239826f812d97c41f50da72fc\AndroidManifest.xml:6:1-16:12
 MERGED from [com.facebook.android:facebook-android-sdk:5.1.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\19fe797529931d367b49123e237273b6\AndroidManifest.xml:21:1-31:12
 MERGED from [com.facebook.android:facebook-login:5.1.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\72b47c7e0b39ffc85662245469d7ce4c\AndroidManifest.xml:21:1-31:12
@@ -80,27 +80,27 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\line\.gr
 MERGED from [com.android.support:print:28.0.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\337ad7ad71335586a5692d61ceddb20d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\c3854a79cef54bcee5e895c78b4a1d34\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\42ed2701e1a402a9d899a2936778a82e\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:4:5-41
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:4:5-35
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:1-51:12
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:1-51:12
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:1-51:12
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:1-51:12
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:13:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:13:5-67
 MERGED from [com.firebaseui:firebase-ui-database:4.1.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\675ea463e44a29b9eb54a3a63fa61ab1\AndroidManifest.xml:11:5-67
@@ -116,9 +116,9 @@ MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\line\.gradle\cach
 MERGED from [com.google.firebase:firebase-database-connection:16.0.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0698460eb71d17da60d0fe41837343f2\AndroidManifest.xml:8:5-67
 MERGED from [com.google.firebase:firebase-database-connection:16.0.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0698460eb71d17da60d0fe41837343f2\AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:7:5-79
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:12:5-79
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\line\.gradle\caches\transforms-2\files-2.1\2bd10592205049f0ba11fe90dab0b50e\AndroidManifest.xml:23:5-79
@@ -130,13 +130,13 @@ MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\line\.
 MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\line\.gradle\caches\transforms-2\files-2.1\beacdff9962c7e3a18d3685ec45f7259\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:17.0.4] C:\Users\line\.gradle\caches\transforms-2\files-2.1\beacdff9962c7e3a18d3685ec45f7259\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:8:5-97
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:8:5-97
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:9:5-49:19
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:9:5-49:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:15:5-107:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\682008fb67ea75ba023bc136a3767ab8\AndroidManifest.xml:22:5-20
@@ -212,88 +212,88 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\line\.gradle\c
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\b4b053d72810c3f4430ccb94d24feb10\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:11:9-35
 	android:allowBackup
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:12:9-40
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:14:9-17:44
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:14:9-17:44
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:19:9-21:63
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:19:9-21:63
 	tools:replace
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:17:13-42
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:17:13-42
 	android:value
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:16:13-60
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:16:13-60
 		REJECTED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:21:13-60
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:15:13-58
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:15:13-58
 provider#android.support.v4.content.FileProvider
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:18:9-29:20
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:18:9-29:20
 	android:grantUriPermissions
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:19:13-47
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:19:13-47
 	android:authorities
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:21:13-74
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:21:13-68
 	android:exported
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:20:13-37
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:22:13-67
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:22:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:24:13-28:25
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:24:13-28:25
 	android:resource
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:26:17-51
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:26:17-51
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:25:17-67
-activity#com.example.tryapplication.main.MainActivity
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:30:9-34:20
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:25:17-67
+activity#com.example.Wo_Ca_Lo.main.MainActivity
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:30:9-34:20
 	android:label
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:31:13-29
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:31:13-29
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:30:19-52
-activity#com.example.tryapplication.PhraseActivity
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:35:9-52
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:30:19-72
+activity#com.example.Wo_Ca_Lo.PhraseActivity
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:35:9-72
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:35:19-49
-activity#com.example.tryapplication.Login.FastRegisteredActivity
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:36:9-38:20
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:35:19-69
+activity#com.example.Wo_Ca_Lo.Login.FastRegisteredActivity
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:36:9-38:20
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:36:19-63
-activity#com.example.tryapplication.Login.ForgetActivity
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:39:9-58
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:36:19-83
+activity#com.example.Wo_Ca_Lo.Login.ForgetActivity
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:39:9-78
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:39:19-55
-activity#com.example.tryapplication.Login.RegisteredActivity
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:40:9-62
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:39:19-75
+activity#com.example.Wo_Ca_Lo.Login.RegisteredActivity
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:40:9-82
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:40:19-59
-activity#com.example.tryapplication.SuperActivity
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:41:9-51
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:40:19-79
+activity#com.example.Wo_Ca_Lo.SuperActivity
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:41:9-71
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:41:19-48
-activity#com.example.tryapplication.Login.LoginActivity
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:42:9-48:20
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:41:19-68
+activity#com.example.Wo_Ca_Lo.Login.LoginActivity
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:42:9-48:20
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:42:19-54
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:42:19-74
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:43:13-47:29
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:44:17-69
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:44:25-66
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:46:17-77
+ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml:46:27-74
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml:46:27-74
 uses-sdk
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:8:5-10:41
 MERGED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:design:28.0.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\682008fb67ea75ba023bc136a3767ab8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\682008fb67ea75ba023bc136a3767ab8\AndroidManifest.xml:20:5-44
-MERGED from [:tdialog] C:\Users\line\AndroidStudioProjects\TryApplication\tdialog\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:tdialog] C:\Users\line\AndroidStudioProjects\TryApplication\tdialog\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:tdialog] C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\tdialog\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:tdialog] C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\tdialog\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] C:\Users\line\.gradle\caches\transforms-2\files-2.1\28834ff239826f812d97c41f50da72fc\AndroidManifest.xml:12:5-14:41
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] C:\Users\line\.gradle\caches\transforms-2\files-2.1\28834ff239826f812d97c41f50da72fc\AndroidManifest.xml:12:5-14:41
 MERGED from [com.facebook.android:facebook-android-sdk:5.1.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\19fe797529931d367b49123e237273b6\AndroidManifest.xml:24:5-26:41
@@ -440,16 +440,16 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\line\.gradle\c
 MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\c3854a79cef54bcee5e895c78b4a1d34\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\42ed2701e1a402a9d899a2936778a82e\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\42ed2701e1a402a9d899a2936778a82e\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\line\AndroidStudioProjects\TryApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\line\AndroidStudioProjects\Wo_Ca_Lo\app\src\main\AndroidManifest.xml
 meta-data#com.google.android.gms.version
 ADDED from [com.firebaseui:firebase-ui-auth:4.3.1] C:\Users\line\.gradle\caches\transforms-2\files-2.1\0c88c1ce88dcf3493488437d888ef357\AndroidManifest.xml:16:9-18:69
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\line\.gradle\caches\transforms-2\files-2.1\96b7a464cf16246962f72a1a6bf1bd12\AndroidManifest.xml:23:9-25:69

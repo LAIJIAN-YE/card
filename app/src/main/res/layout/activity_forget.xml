@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="15dp"
     android:orientation="vertical"
-    tools:context=".Login.ForgetActivity">
+    tools:context="com.example.Wo_Ca_Lo.Login.ForgetActivity">
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/for_email_la"

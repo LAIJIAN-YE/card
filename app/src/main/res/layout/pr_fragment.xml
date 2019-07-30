@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".main.Pr_Fragment">
+    tools:context="com.example.Wo_Ca_Lo.main.Pr_Fragment">
 
 <android.support.v7.widget.RecyclerView
     android:id="@+id/main_1_Rv"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tryapplication"
+    package="com.example.Wo_Ca_Lo"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -28,7 +28,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.example.tryapplication.fileprovider"
+            android:authorities="com.example.Wo_Ca_Lo.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -38,16 +38,16 @@
         </provider>
 
         <activity
-            android:name="com.example.tryapplication.main.MainActivity"
+            android:name="com.example.Wo_Ca_Lo.main.MainActivity"
             android:label="" >
         </activity>
-        <activity android:name="com.example.tryapplication.PhraseActivity" />
-        <activity android:name="com.example.tryapplication.Login.FastRegisteredActivity" >
+        <activity android:name="com.example.Wo_Ca_Lo.PhraseActivity" />
+        <activity android:name="com.example.Wo_Ca_Lo.Login.FastRegisteredActivity" >
         </activity>
-        <activity android:name="com.example.tryapplication.Login.ForgetActivity" />
-        <activity android:name="com.example.tryapplication.Login.RegisteredActivity" />
-        <activity android:name="com.example.tryapplication.SuperActivity" />
-        <activity android:name="com.example.tryapplication.Login.LoginActivity" >
+        <activity android:name="com.example.Wo_Ca_Lo.Login.ForgetActivity" />
+        <activity android:name="com.example.Wo_Ca_Lo.Login.RegisteredActivity" />
+        <activity android:name="com.example.Wo_Ca_Lo.SuperActivity" />
+        <activity android:name="com.example.Wo_Ca_Lo.Login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -139,7 +139,7 @@
 
         <provider
             android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
-            android:authorities="com.example.tryapplication.authuiinitprovider"
+            android:authorities="com.example.Wo_Ca_Lo.authuiinitprovider"
             android:exported="false"
             android:initOrder="90" />
 
@@ -147,7 +147,7 @@
 
         <provider
             android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.example.tryapplication.lifecycle-trojan"
+            android:authorities="com.example.Wo_Ca_Lo.lifecycle-trojan"
             android:exported="false"
             android:multiprocess="true" />
         <!--
@@ -231,7 +231,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.tryapplication.firebaseinitprovider"
+            android:authorities="com.example.Wo_Ca_Lo.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -264,7 +264,7 @@
         -->
         <provider
             android:name="com.facebook.internal.FacebookInitProvider"
-            android:authorities="com.example.tryapplication.FacebookInitProvider"
+            android:authorities="com.example.Wo_Ca_Lo.FacebookInitProvider"
             android:exported="false" />
 
         <receiver
@@ -285,7 +285,7 @@
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.tryapplication.com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.Wo_Ca_Lo.com.android.tools.ir.server.InstantRunContentProvider"
             android:multiprocess="true" />
     </application>
 
