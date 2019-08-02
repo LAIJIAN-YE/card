@@ -704,10 +704,6 @@
         "source": "C:\\Users\\line\\.gradle\\caches\\transforms-2\\files-2.1\\8854e05a3c0c050d6e040bce842bc70c\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\line\\AndroidStudioProjects\\Wo_Ca_Lo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_aaa.jpg.flat",
-        "source": "C:\\Users\\line\\AndroidStudioProjects\\Wo_Ca_Lo\\tdialog\\build\\intermediates\\packaged_res\\debug\\drawable\\aaa.jpg"
-    },
-    {
         "merged": "C:\\Users\\line\\AndroidStudioProjects\\Wo_Ca_Lo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_messenger_button_blue_bg_selector.xml.flat",
         "source": "C:\\Users\\line\\.gradle\\caches\\transforms-2\\files-2.1\\85d4ccd0327b7a5338562e1c25c8c750\\res\\drawable\\messenger_button_blue_bg_selector.xml"
     },
@@ -3094,10 +3090,6 @@
     {
         "merged": "C:\\Users\\line\\AndroidStudioProjects\\Wo_Ca_Lo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
         "source": "C:\\Users\\line\\.gradle\\caches\\transforms-2\\files-2.1\\682008fb67ea75ba023bc136a3767ab8\\res\\drawable-v21\\avd_hide_password.xml"
-    },
-    {
-        "merged": "C:\\Users\\line\\AndroidStudioProjects\\Wo_Ca_Lo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bbb.jpg.flat",
-        "source": "C:\\Users\\line\\AndroidStudioProjects\\Wo_Ca_Lo\\tdialog\\build\\intermediates\\packaged_res\\debug\\drawable\\bbb.jpg"
     },
     {
         "merged": "C:\\Users\\line\\AndroidStudioProjects\\Wo_Ca_Lo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
