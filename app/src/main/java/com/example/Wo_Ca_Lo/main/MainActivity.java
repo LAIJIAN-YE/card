@@ -429,6 +429,7 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
         toggle.syncState();
         //DialogFragment+Viewpager+Fragment
          dialog_image=new Dialog_Image();
+         HE_Picture.setImageDrawable(getDrawable(R.drawable.profile));
     }
 
     /**
