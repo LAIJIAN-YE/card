@@ -2,6 +2,7 @@ package com.example.Wo_Ca_Lo.main;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
+import android.util.Log;
 
 
 import com.example.Wo_Ca_Lo.Adapter.LinearAdapter;
@@ -14,11 +15,12 @@ import java.util.HashMap;
  * Activity 跟 Fragment 數據共享跟數據跟新
  */
 public class PageViewModel extends ViewModel {
-
+    private static final  String TAG="PageViewModel";
     private  static MutableLiveData<ArrayList<FormatEnglish>> In_Mutable;   //中級單字列表
     private  static MutableLiveData<HashMap<Integer,Boolean>> hashMapMutable; //所有按鈕設定值
     private  static MutableLiveData<ArrayList<FormatEnglish>> Pr_Mutable; //初級單字列表
     private  static MutableLiveData<Boolean> booleanLiveData; //我的最愛 跟新值
+    private  static MutableLiveData<Boolean> booleanPrData; //初級單字 跟新值
     private  static  MutableLiveData<LinearAdapter> Pr_Adapter; //初級單字 適配器
     private  static  MutableLiveData<LinearAdapter> In_Adapter;//中級單字 適配器
     private  static  MutableLiveData<LinearAdapter> Ml_Adapter; //我的最愛 適配器
@@ -31,7 +33,12 @@ public class PageViewModel extends ViewModel {
         return background;
     }
 
-
+    public  MutableLiveData<Boolean> getBooleanPrData() {
+        if(booleanPrData==null){
+            booleanPrData=new MutableLiveData<>();
+        }
+        return booleanPrData;
+    }
 
     public  MutableLiveData<LinearAdapter> getMl_Adapter() {
         if(Ml_Adapter==null){
@@ -70,6 +77,8 @@ public class PageViewModel extends ViewModel {
         if(Pr_Mutable==null){
             Pr_Mutable=new MutableLiveData<>();
         }
+
+
         return Pr_Mutable;
     }
     //中級單字資料

@@ -41,6 +41,11 @@
         <activity
             android:name="com.example.Wo_Ca_Lo.main.MainActivity"
             android:label="" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name="com.example.Wo_Ca_Lo.PhraseActivity" />
         <activity android:name="com.example.Wo_Ca_Lo.Login.FastRegisteredActivity" >
@@ -49,11 +54,6 @@
         <activity android:name="com.example.Wo_Ca_Lo.Login.RegisteredActivity" />
         <activity android:name="com.example.Wo_Ca_Lo.SuperActivity" />
         <activity android:name="com.example.Wo_Ca_Lo.Login.LoginActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data

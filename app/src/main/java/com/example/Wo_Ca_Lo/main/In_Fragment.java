@@ -20,6 +20,7 @@ import android.widget.CompoundButton;
 
 import com.example.Wo_Ca_Lo.Adapter.LinearAdapter;
 import com.example.Wo_Ca_Lo.R;
+import com.example.Wo_Ca_Lo.data.ExampleList_in;
 import com.example.Wo_Ca_Lo.data.FormatEnglish;
 
 
@@ -35,12 +36,13 @@ public class In_Fragment extends Fragment {
     private LinearAdapter In_Adapter;
     private static  final  String TAG="In_Fragment";
     private PageViewModel pageViewModel;
-    private int listSize;
+
     private HashMap<Integer,Boolean> Check;
     private MyAsyncTask  myAsyncTask;
+    private int Pr_size,In_list_size;
+
     public static In_Fragment newInstance() {
         In_Fragment fragment = new In_Fragment();
-
         return fragment;
     }
 
@@ -63,10 +65,11 @@ public class In_Fragment extends Fragment {
         pageViewModel.getIn_Mutable().observe(getActivity(), new Observer<ArrayList<FormatEnglish>>() {
             @Override
             public void onChanged(@Nullable ArrayList<FormatEnglish> formatEnglishes) {
-                In_list=formatEnglishes;
-                listSize=In_list.size();
+                In_list_size=formatEnglishes.size();
+
                 myAsyncTask=new MyAsyncTask();
                 myAsyncTask.execute();
+
             }
         });
 
@@ -91,7 +94,11 @@ public class In_Fragment extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-
+            In_list=new ExampleList_in().englishes();
+            Pr_size=pageViewModel.getPr_Mutable().getValue().size();
+            for(int i=0;i<In_list.size();i++){
+                In_list.get(i).setNumber((i+Pr_size));
+            }
             //從MainActivity取得hashmap
             Check=pageViewModel.getHashMapMutable().getValue();
         }
@@ -112,19 +119,28 @@ public class In_Fragment extends Fragment {
                         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                             //如果不為空 設定按鈕改變 並把值 傳送出去
                             if(Check.get(position)!=null) {
-                                Check.put(position + listSize, isChecked);
+                                Check.put(In_list.get(position).getNumber() , isChecked);
                                 pageViewModel.getHashMapMutable().setValue(Check);
                             }
-                          //  Toast.makeText(getActivity(),In_list.get(position).getNumber()+"p2/"+isChecked,Toast.LENGTH_LONG).show();
+
                         }
                     });
+                    //比搜尋時size大的 position 不設置check 會有異位錯誤發生
+                    if (In_list.size()>=(position+1)&&In_list.get(position)!=null){
+                        checkBox.setChecked(Check.get((In_list.get(position).getNumber())));
+                    }
                     //如果hashmap在其他地方有有跟改則回調 跟新按鈕值
                     pageViewModel.getHashMapMutable().observe(In_Fragment.this, new Observer<HashMap<Integer, Boolean>>() {
                         @Override
+
                         public void onChanged(@Nullable HashMap<Integer, Boolean> integerBooleanHashMap) {
-                            checkBox.setChecked(integerBooleanHashMap.get(position+listSize));
+                            //比搜尋時size大的 position 不設置check 會有異位錯誤發生
+                            if (In_list.size()>=(position+1)){
+                                checkBox.setChecked(integerBooleanHashMap.get((In_list.get(position).getNumber())));
+                            }
                         }
                     });
+
 
                 }
             });

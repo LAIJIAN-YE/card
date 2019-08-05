@@ -20,6 +20,7 @@ import android.widget.CompoundButton;
 
 import com.example.Wo_Ca_Lo.Adapter.LinearAdapter;
 import com.example.Wo_Ca_Lo.R;
+import com.example.Wo_Ca_Lo.data.ExampleList_pr;
 import com.example.Wo_Ca_Lo.data.FormatEnglish;
 
 
@@ -37,6 +38,7 @@ public class Pr_Fragment extends Fragment {
     private ArrayList<FormatEnglish> Pr_list;
     private HashMap<Integer,Boolean> Check;
     private MyAsyncTask myAsyncTask;
+    private int Pr_list_size;
 
     public static Pr_Fragment newInstance() {
         Pr_Fragment fragment = new Pr_Fragment();
@@ -49,6 +51,8 @@ public class Pr_Fragment extends Fragment {
         super.onCreate(savedInstanceState);
         pageViewModel = ViewModelProviders.of(this).get(PageViewModel.class);
 
+
+
     }
 
     @Override
@@ -58,17 +62,14 @@ public class Pr_Fragment extends Fragment {
         View root = inflater.inflate(R.layout.pr_fragment, container, false);
         recyclerView=root.findViewById(R.id.main_1_Rv);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
-
         pageViewModel.getPr_Mutable().observe(getActivity(), new Observer<ArrayList<FormatEnglish>>() {
             @Override
             public void onChanged(@Nullable ArrayList<FormatEnglish> formatEnglishes) {
-                Pr_list=formatEnglishes;
+                Pr_list_size=formatEnglishes.size();
                 myAsyncTask=new MyAsyncTask();
                 myAsyncTask.execute();
             }
         });
-
         pageViewModel.getBackground().observe(this, new Observer<String[]>() {
             @Override
             public void onChanged(@Nullable String[] strings) {
@@ -102,6 +103,17 @@ public class Pr_Fragment extends Fragment {
             super.onPreExecute();
 
             Check=pageViewModel.getHashMapMutable().getValue();
+            Pr_list=new ExampleList_pr().englishes();
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    for(int i=0;i<Pr_list.size();i++){
+                        Pr_list.get(i).setNumber(i);
+
+                    }
+                }
+            }).start();
         }
 
         @Override
@@ -120,21 +132,31 @@ public class Pr_Fragment extends Fragment {
                     checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
                         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
                             //如果不為空 設定按鈕改變 並把值 傳送出去
                             if(Check.get(position)!=null) {
-                                Check.put(position , isChecked);
+                                Check.put((Pr_list.get(position).getNumber()) , isChecked);
+                                Log.d(TAG, "onCheckedChanged: "+Pr_list.get(position).getNumber());
                                 pageViewModel.getHashMapMutable().setValue(Check);
-
                             }
                             Log.d(TAG, "onCheckedChanged: "+(position)+"/"+isChecked);
-                          //  Toast.makeText(getActivity(),Pr_list.get(position).getNumber()+"p2/"+isChecked,Toast.LENGTH_LONG).show();
                         }
                     });
+                    //比搜尋時size大的 position 不設置check 會有異位錯誤發生
+                    if (Pr_list.size()==Pr_list_size&&Pr_list.get(position)!=null){
+                        checkBox.setChecked(Check.get((Pr_list.get(position).getNumber())));
+                    }
                     //如果hashmap在其他地方有有跟改則回調 跟新按鈕值
                     pageViewModel.getHashMapMutable().observe(Pr_Fragment.this, new Observer<HashMap<Integer, Boolean>>() {
                         @Override
                         public void onChanged(@Nullable HashMap<Integer, Boolean> integerBooleanHashMap) {
-                            checkBox.setChecked(integerBooleanHashMap.get(position));
+                            //比搜尋時size大的 position 不設置check 會有異位錯誤發生
+                            if (Pr_list.size()>=(position+1)){
+                                 checkBox.setChecked(integerBooleanHashMap.get((Pr_list.get(position).getNumber())));
+
+
+                            }
+
                         }
                     });
 

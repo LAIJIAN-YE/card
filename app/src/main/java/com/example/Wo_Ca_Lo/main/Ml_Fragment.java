@@ -18,7 +18,10 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
 import com.example.Wo_Ca_Lo.Adapter.LinearAdapter;
+import com.example.Wo_Ca_Lo.Login.Check;
 import com.example.Wo_Ca_Lo.R;
+import com.example.Wo_Ca_Lo.data.ExampleList_in;
+import com.example.Wo_Ca_Lo.data.ExampleList_pr;
 import com.example.Wo_Ca_Lo.data.FormatEnglish;
 
 
@@ -37,6 +40,7 @@ public class Ml_Fragment extends Fragment {
     private HashMap<Integer,Boolean> Check;
     private ArrayList<FormatEnglish> Pr_list,In_list;
     private mAsyncTask UpadateUI;
+    private int Pr_size,In_size;
     public static Ml_Fragment newInstance() {
         Ml_Fragment fragment = new Ml_Fragment();
         return fragment;
@@ -46,7 +50,7 @@ public class Ml_Fragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         pageViewModel = ViewModelProviders.of(this).get(PageViewModel.class);
-        Ml_list=new ArrayList<>();
+        Ml_list=new ArrayList<>();;
 
     }
 
@@ -57,6 +61,7 @@ public class Ml_Fragment extends Fragment {
         View root = inflater.inflate(R.layout.ml_fragment, container, false);
         recyclerView=root.findViewById(R.id.main_3_RV);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
         UpadateUI=new mAsyncTask();
         UpadateUI.execute();
         Log.d(TAG, "onCreateView: ");
@@ -108,24 +113,30 @@ public class Ml_Fragment extends Fragment {
             Pr_list=pageViewModel.getPr_Mutable().getValue();
             //從mainActivity取得中級單字列表
             In_list=pageViewModel.getIn_Mutable().getValue();
+            Pr_size=Pr_list.size();
+            In_size=In_list.size();
+            Log.d(TAG, "onPreExecute: "+Ml_list.size()+"/"+In_list.size()+"/"+Pr_size);
         }
         @Override
         protected Object doInBackground(Object[] objects) {
 
             //取得hashmap 中的 boolean 為ture則加入到列表
             for(int i=0;i<Check.size();i++){
-
+                Log.d(TAG, "doInBackground: "+ +i+"/"+Check.get(i));
                 if (i < Pr_list.size()) {
                     if(Check.get(i).booleanValue()){
                         Log.d(TAG, "Pr_Check: "+i+Check.get(i).booleanValue());
                         Ml_list.add(Pr_list.get(i));
+                        Log.d(TAG, "doInBackground: "+Ml_list.size()+"/"+In_list.size()+"/"+Pr_size);
                     }
                 }else{
 
 
                     if(Check.get(i).booleanValue()){
                         Log.d(TAG, "In_Check: "+i+Check.get(i).booleanValue());
-                        Ml_list.add(In_list.get((i-Pr_list.size())));
+
+                        Ml_list.add(In_list.get(i-Pr_list.size()));
+                        Log.d(TAG, "doInBackground: "+Ml_list.size()+"/"+In_list.size()+"/"+Pr_size);
                     }
                 }
 
@@ -156,20 +167,21 @@ public class Ml_Fragment extends Fragment {
                             //按鈕為false 跟新介面
                             if(isChecked==false){
 
-                                    if(UpadateUI!=null){
-                                        UpadateUI.cancel(true);
-                                        UpadateUI=null;
+                                if(UpadateUI!=null){
+                                    UpadateUI.cancel(true);
+                                    UpadateUI=null;
+                                }
 
-                                    }
                                 UpadateUI=new mAsyncTask();
                                 UpadateUI.execute();
-
                             }
                         }
 
                     });
+
                     //從Ml_list取得對應Check的數值 交給Check中取得設定值
                     checkBox.setChecked(Check.get(Ml_list.get(position).getNumber()));
+                 //   checkBox.setChecked(Check.get(position));
                 }
             });
             if(recyclerView.getAdapter()!=null){

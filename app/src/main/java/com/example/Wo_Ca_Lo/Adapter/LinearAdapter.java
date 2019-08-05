@@ -37,6 +37,10 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
     private  SetonChangeListner msetonchangeListner;
     private  MediaPlayer mediaPlayer;
     private  static  final String  TAG ="LinearAdapter";
+    private  static  int rehashcode;
+    public ArrayList<FormatEnglish> getExampleList() {
+        return exampleList;
+    }
     //接口 讓Activity 調用 onBindViewHolder 裡的 checkBox 跟 position 跟 list
     public interface SetonChangeListner{
         void onchage(CheckBox checkBox, int position, ArrayList<FormatEnglish> list);
@@ -75,7 +79,7 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
         return position;
     }
     @Override
-    public void onBindViewHolder(final LinearAdapter.LinearViewHilder viewHolder, final int postion) {
+    public void onBindViewHolder( final LinearAdapter.LinearViewHilder viewHolder,  int postion) {
             //透過postion 取得相對應的 formatEnglish資料
         final FormatEnglish formatEnglish=exampleList.get(postion);
         viewHolder.TPhrase.setText(formatEnglish.getPhrase());//英文單字
@@ -101,9 +105,9 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
 
         //不是null則把資料 給MainActivity 做回調
         if(msetonchangeListner!=null){
-            msetonchangeListner.onchage(viewHolder.checkBox,postion,exampleList);
+            msetonchangeListner.onchage(viewHolder.checkBox, viewHolder.getAdapterPosition(),exampleList);
         }
-
+        Log.d(TAG, "onBindViewHolder: "+viewHolder.getAdapterPosition());
     }
 
     //RecyclerView 列表的數目 用exampleList 的大小決定
@@ -120,10 +124,11 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
     private  Filter exampleFilter=new Filter() {
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
-            //新建 filteredList 如果輸入為0 或空 則顯示全部的列表
             List<FormatEnglish> filteredList=new ArrayList<>();
             if (constraint==null||constraint.length()==0){
-                filteredList.addAll(exampleListFull);//加入全部的列表
+                //沒有過濾的內容 原數據
+                filteredList.addAll(exampleListFull);
+
             }else{
                 //以據輸入的值 在列表中找到相關的詞 並把帶有的列表 顯示出來
                 String filterPattern=constraint.toString().toLowerCase().trim();
@@ -137,17 +142,27 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
             }
             FilterResults results=new FilterResults();
             results.values=filteredList;
+
             return results;
         }
 
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
-           //取得過濾後的值 並跟新
+//           //取得過濾後的值 並跟新
+            Log.d(TAG, "publishResults: "+exampleList.size());
             exampleList.clear();
+
             exampleList.addAll((List)results.values);
+            Log.d(TAG, "publishResults: "+exampleList.size());
+
             notifyDataSetChanged();
+
         }
     };
+
+
+
+
     class LinearViewHilder extends RecyclerView.ViewHolder    {
         private TextView TPhrase, TPhrase_ch, Singleword, Singleword_ch, Phrase_kk,li_num;
         private Button radio_bt;

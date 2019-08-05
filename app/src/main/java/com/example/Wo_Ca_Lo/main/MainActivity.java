@@ -1,5 +1,6 @@
 package com.example.Wo_Ca_Lo.main;
 import android.Manifest;
+import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.ContentUris;
 import android.content.DialogInterface;
@@ -161,19 +162,29 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
                     }
 
                     @Override
-                    public boolean onQueryTextChange(String s) {
+                    public boolean onQueryTextChange(final String s) {
 //                //如果輸入字體變化 把字體傳到linearAdapter
+
+
                         if(pageViewModel.getPr_Adapter().getValue()!=null){
                             pageViewModel.getPr_Adapter().getValue().getFilter().filter(s);
-                        }
-                         if (pageViewModel.getMl_Adapter().getValue()!=null){
-                             pageViewModel.getMl_Adapter().getValue().getFilter().filter(s);
-                         }
-                         if (pageViewModel.getIn_Adapter().getValue()!=null){
-                             pageViewModel.getIn_Adapter().getValue().getFilter().filter(s);
-                         }
 
-                        return true;
+                        }
+
+//                        if (pageViewModel.getMl_Adapter().getValue()!=null&&pageViewModel.getMl_Adapter().getValue().getExampleList().size()>0){
+//                            pageViewModel.getMl_Adapter().getValue().getFilter().filter(s);
+//
+//                        }
+                        if (pageViewModel.getMl_Adapter().getValue()!=null){
+                            pageViewModel.getMl_Adapter().getValue().getFilter().filter(s);
+                        }
+
+                        if (pageViewModel.getIn_Adapter().getValue()!=null){
+                            pageViewModel.getIn_Adapter().getValue().getFilter().filter(s);
+                        }
+
+
+                        return false;
                     }
                 });
 
@@ -392,6 +403,9 @@ public class MainActivity extends SuperActivity implements NavigationView.OnNavi
 
             @Override
             public void onPageSelected(int i) {
+                if (i==0){
+                    pageViewModel.getBooleanPrData().setValue(true);
+                }
                 if(i==2){
                     //跟新我的最愛ui介面
                     pageViewModel.getBooleanLiveData().setValue(true);
